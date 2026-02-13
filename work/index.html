@@ -1,0 +1,301 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alex Gym | Taekwondo & Muay Thai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                  url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #f44336;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+
+    .btn {
+      background: #f44336;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff7961;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #f44336;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .schedule {
+      text-align: center;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(244,67,54,0.5);
+}
+.coach {
+  margin-top: 60px;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.coach h3 {
+  color: #f44336;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.coach h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.coach p {
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.7;
+  color: #ddd;
+}
+.coach-gallery {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.coach-gallery h3 {
+  color: #f44336;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
+.coach-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.coach-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.coach-images img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 30px rgba(244,67,54,0.5);
+}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Alex Gym</h1>
+      <p>Gym • Taekwondo • Muay Thai</p>
+      <a href="#programs" class="btn">Join Now</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+      Alex Gym is a professional training center dedicated to strength,
+      discipline, and self-defense. We train all ages in fitness,
+      Taekwondo, and Muay Thai with certified coaches.
+    </p>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>💪 Gym Training</h3>
+        <p>Weight training, cardio, and body transformation programs.</p>
+      </div>
+
+      <div class="card">
+        <h3>🥋 Taekwondo</h3>
+        <p>Traditional martial art for discipline, flexibility, and defense.</p>
+      </div>
+
+      <div class="card">
+        <h3>🥊 Muay Thai</h3>
+        <p>Powerful striking art using fists, elbows, knees, and kicks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="schedule">
+    <h2>Class Schedule</h2>
+    <p>
+      🕕 Morning: 6:00 AM – 9:00 AM<br>
+      🕔 Evening: 5:00 PM – 9:00 PM<br>
+      📅 Monday – Saturday
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+      📍 Location: Your City<br>
+      📞 Phone: +251 XXX XXX XXX<br>
+      📧 Email: alexgym@email.com
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Alex Gym | Train Hard. Stay Strong.
+  </footer>
+  <!-- ABOUT + GALLERY -->
+<section id="about">
+  <h2>About Alex Gym</h2>
+
+  <p style="text-align:center; max-width:800px; margin: 0 auto 40px;">
+    Alex Gym is a professional fitness and martial arts center offering
+    Gym Training, Taekwondo, and Muay Thai. We focus on strength, discipline,
+    confidence, and self-defense for all ages. <br>
+    
+At Alex Gym, we believe fitness is not just a goal—it’s a lifestyle. Our space is designed to motivate, challenge, and support you at every stage of your fitness journey. Whether you’re a beginner or a seasoned athlete, Alex Gym is where strength, discipline, and confidence are built.
+  </p>
+
+  <div class="gallery">
+    <img src="image/leg.jpg" alt="Gym Training">
+    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Weight Training">
+    <img src="image/tt.jpg" alt="Taekwondo Training">
+    <img src="image/mm.jpg" alt="Muay Thai Training">
+     
+    <img src="image/vv.jpg" alt="Fitness Workout">
+    <img src="image/bb.jpg" alt="Boxing Training">
+    <img src="image/kid.jpg" alt="kids Martial Arts">
+    <img src="image/edu.jpg" alt="eden Training">
+    <img src="image/kik.jpg" alt="kicks">
+  </div>
+</section>
+
+<div class="coach">
+  <h3>Head Coach & Grand Master</h3>
+  <h2>Alemayehu Oyecha</h2>
+
+  <p>
+    Grand Master Alemayehu Oyecha is a highly respected martial arts
+    instructor with over 20 years of experience in professional sport
+    training and international competition.
+  </p>
+
+  <p>
+    Throughout his career, he has competed in numerous national and
+    international championships, building a reputation for discipline,
+    technical excellence, and leadership. His mission is to develop
+    strong, confident, and disciplined athletes both physically and mentally.
+  </p>
+
+  <p>
+    Under his guidance, students at Alex Gym receive world-class training
+    in Taekwondo and Muay Thai, learning not only fighting skills but
+    also respect, focus, and self-control.
+  </p>
+</div>
+<!-- COACH PHOTO GALLERY -->
+<div class="coach-gallery">
+  <h3>Grand Master in Action</h3>
+
+  <div class="coach-images">
+     <img src="image/bmaster.jpg" alt="Coach Training">
+    <img src="image/master.jpg" alt="Coach Training">
+    <img src="image/cmaster.jpg" alt="Competition">
+    <img src="image/egna.jpg" alt="Coaching Students">
+    <img src="image/enesu.jpg" alt="Martial Arts Training">
+  </div>
+</div>
+
+</body>
+</html>
